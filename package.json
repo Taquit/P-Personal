@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-personal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss styles/main.css",
+    "watch": "sass --watch scss/main.scss styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taquit/P-Personal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taquit/P-Personal/issues"
+  },
+  "homepage": "https://github.com/Taquit/P-Personal#readme",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}

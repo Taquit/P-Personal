@@ -1,0 +1,63 @@
+body {
+  margin: 0px;
+}
+
+.navbar {
+  background-color: white;
+  color: #025157;
+  font-weight: 500;
+  text-align: center;
+}
+.navbar ul {
+  padding: 0%;
+}
+
+.nav-button {
+  text-align: right;
+}
+
+main {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.Presentacion {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.Presentacion figure {
+  flex-direction: column;
+  background-color: yellow;
+  margin-left: 30%;
+}
+.Presentacion article {
+  flex-direction: column;
+  margin-right: 20%;
+  margin-left: 20px;
+}
+.Presentacion article h2 {
+  text-align: center;
+}
+.Presentacion article p {
+  text-align: center;
+}
+
+.About-me {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin: 15px;
+}
+.About-me .card {
+  margin: 10px;
+  border-radius: 10px;
+  border-width: 5px;
+}
+.About-me .card h2 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
