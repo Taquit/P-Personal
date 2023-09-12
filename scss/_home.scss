@@ -1,0 +1,234 @@
+body{
+    margin: 0px;
+    max-width: 100%;
+    background-image:url("https://images6.alphacoders.com/509/509906.jpg") ;
+   
+}
+body > *{
+    color: white;
+}
+
+.navbar{
+    background-color: white;
+    color: #025157;
+    font-weight: 500;
+    text-align: center;
+    ul{
+
+        padding: 0%;
+
+    }
+    
+  }
+.nav-button{
+    text-align: right;
+}
+
+
+main{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    h1{
+      font-size: 50px;
+      margin-bottom: 20px;  
+    }
+    
+    
+}
+.Presentacion{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    figure{
+        flex-direction: column;
+        margin-left: 30%;
+        img{
+            
+        }
+    }
+    article{
+        flex-direction: column;
+        margin-right: 20%;
+        margin-left: 20px;
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+
+}
+
+.About-me{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr; 
+    margin: 15px ;
+    
+    
+    .card{
+        color: white;
+        background-color: #7cbeb328;
+        backdrop-filter: blur(5px) ;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 3px #4f9;
+        border-width: 5px;
+        h2{
+            text-align: center;
+        }
+        
+    }
+    
+}
+
+.title-tec{
+    text-align: center;
+    
+}
+.tecnologias{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    
+    
+    .carousel-tec{
+        margin: 10px;
+        
+        height: 400px;
+        
+    }
+}
+
+.carousel-tec{
+    display: flex;
+    .carousel-inner{
+        margin: 10px;
+        width: 90% auto;
+        background-color: #e8ca344f;
+        backdrop-filter: blur(5px);
+        border-radius: 1rem;
+        box-shadow: 0 0 3px #e8ca344f;
+
+    }
+    .firstSlide{
+        h3{
+            margin-top: 25%;
+            text-align: center;
+        }
+        img{
+            margin-top: 15%;
+            
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
+    .secondSlide{
+        h3{
+            text-align: center;
+            align-items: center;
+            margin: 10px;
+            margin-top: 15%;
+        }
+        p{
+            margin-top: 10px;
+            margin: 10px;
+        }
+    }
+}
+
+/* Laptops/desktops, 992px and up */
+@media only screen and (max-width: 1440px){
+    .carousel-tec{
+        .firstSlide{
+            margin-top: 30px;
+            margin-bottom: 25px;
+            justify-content: center;
+            img{
+                margin-top: 5%;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+/* tablets, 768px and up */
+@media only screen and (max-width: 768px){
+    main{
+        margin-top: 50px;
+        margin-bottom: 50px ;
+    }
+    .Presentacion {
+        figure{
+            margin-top: 2px ;
+            margin-left: 5%;
+            margin-right: 5px;
+        }
+        article{
+            margin-top: 2px;
+            margin-right: 5%;
+            margin-left: 5px;
+        }
+    }
+    .carousel-tec{
+        .firstSlide{
+            margin-top: 50px;
+            justify-content: center;
+            img{
+                width: fit-content;
+                height: fit-content;
+            }
+        }
+    }
+}
+
+/* large phones  600px and up */
+@media only screen and (max-width: 600px){
+    .About-me{
+        grid-template-columns: 2fr 2fr; 
+    }
+
+    .tecnologias{
+        grid-template-columns: 2fr 2fr;
+        margin: 0%;
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 425px){
+    .Presentacion{
+        display: inline;
+        figure{
+            margin-left: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        article{
+            margin: 0%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .About-me{
+        grid-template-columns: 2fr;
+    }
+
+    .tecnologias{
+        grid-template-columns: 2fr;
+        .carousel-tec {
+            h3{
+                margin-top: 0px; 
+            }
+           
+           
+        }
+        
+    }
+}
